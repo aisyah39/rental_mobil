@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Car Rental King</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+      >
+        <h2 class="text-danger"><img src="img/logo.png" alt="" /> CarRental<span class="text-dark">King</span></h2>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="service.html" class="nav-item nav-link">Service</a>
+          
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Kategori</a
+            >
+            <div class="dropdown-menu bg-light m-0">
+              <a href="listcar.html" class="dropdown-item">Car List</a>
+              <a href="driver.html" class="dropdown-item">Plus Driver</a>
+              <a href="no driver.html" class="dropdown-item">Lepas Kunci</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a
+          href="registrasi.html"
+          class="btn btn-danger py-4 px-lg-5 d-none d-lg-block"
+          >ORDER NOW
+        </a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="img/jpg1.png" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7">
+                    <h1 class="display-2 text-light mb-5 animated slideInDown">
+                      “Drive your dreams with our rental cars.”
+                    </h1>
+                    <a href="" class="btn btn-danger py-sm-3 px-sm-5"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/jpg2.png" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7">
+                    <h1 class="display-2 text-light mb-5 animated slideInDown">
+                      “Experience the difference with our rental cars.”
+                    </h1>
+                    <a href="" class="btn btn-danger py-sm-3 px-sm-5"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Carousel End -->
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+      <div class="container py-5 pt-lg-0">
+        <div class="row gx-0">
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="bg-white shadow d-flex align-items-center h-100 p-4"
+              style="min-height: 150px"
+            >
+              <div class="d-flex">
+                <div class="flex-shrink-0 btn-lg-square bg-danger">
+                  <i class="fa fa-car text-white"></i>
+                </div>
+                <div class="ps-4">
+                  <h5>Quality Car Rental</h5>
+                  <span>Enjoy your trip with our quality cars!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <div
+              class="bg-white shadow d-flex align-items-center h-100 p-4"
+              style="min-height: 150px">
+              <div class="d-flex">
+                <div class="flex-shrink-0 btn-lg-square bg-danger">
+                  <i class="fa fa-users text-white"></i>
+                </div>
+                <div class="ps-4">
+                  <h5>Safe and Comfortable</h5>
+                  <span
+                    >We are here to make your trip safer and more
+                    comfortable!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+            <div
+              class="bg-white shadow d-flex align-items-center h-100 p-4"
+              style="min-height: 150px"
+            >
+              <div class="d-flex">
+                <div class="flex-shrink-0 btn-lg-square bg-danger">
+                  <i class="fa fa-file-alt text-white"></i>
+                </div>
+                <div class="ps-4">
+                  <h5>Affordable Prices</h5>
+                  <span>Enjoy your trip at affordable prices from us!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Facts End -->
+
+    <!--Welcome Start-->
+    <div class="container py-3">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 900px"
+        >
+          <h1 class="text-danger text-uppercase mt-3 mb-3">--- Welcome to Car Rental King ---</h1>
+          <h5 class="display-7 mb-4">Cari rental mobil ? Bisa lepas kunci?  Car Rental King siap membantu. Sewa mobil lepas kunci atau plus driver. Fasilitas antar jemput. Ready berbagai macam mobil kualitas aman, nyaman dan terpercaya dengan harga terjangkau!</h5>
+        </div>
+    <!--Welcome End-->
+    
+
+    <!-- Choose Start -->
+    <div class="container-xxl py-6">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="position-relative overflow-hidden ps-5 pt-5 h-100"
+              style="min-height: 400px"
+            >
+              <img
+                class="position-absolute w-100 h-100"
+                src="img/car3.avif"
+                alt=""
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <h1 class="text-danger text-uppercase mb-3">Why Choose Our Rental?</h1>
+              <p>
+                Dengan menggunakan rental mobil kami anda akan mendapatkan tarif rental mobil murah terdekat dengan driver berpengalaman maupun lepas kunci hanya di Car Rental King. Kami meyediakan berbagai jenis rental mobil mewah terbaru. Anda bisa sewa mobil mingguan , bulanan dan sewa mobil harian 24 jam dengan nyaman.
+              </p>
+
+              <div class="row g-2 mb-4 pb-2">
+                <div class="col-sm-6">
+                  <i class="fa fa-check text-danger me-2"></i>Fleksibel
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa fa-check text-danger me-2"></i>Ekonomis
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa fa-check text-danger me-2"></i>Efisien
+                </div>
+                <div class="col-sm-6">
+                  <i class="fa fa-check text-danger"></i>Aman dan Nyaman
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Choose End -->
+
+    <!-- Features Start -->
+    <div class="container-xxl py-6">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="text-danger text-uppercase mb-2">HOW TO RENT?</h2>
+
+            <p class="mb-5">
+              Do you want to go for a walk but don't have a vehicle yet? We are
+              ready to help you. Trusted car rental service.
+            </p>
+            <div class="row gy-5 gx-4">
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0 btn-square bg-danger me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h5 class="mb-0">Plan Your Booking</h5>
+                </div>
+                <span
+                  >Tentukan hari, tanggal, jam, lokasi penyewaan jenis mobil,
+                  jumlah seat yang diperlukan jenis transmisi, dengan
+                  supir/tanpa supir</span
+                >
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0 btn-square bg-danger me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h5 class="mb-0">Booking</h5>
+                </div>
+                <span
+                  >Customer Service kami akan memberikan panduan sewa kendaraan,
+                  daftar harga sewa, dan form booking yang harus Anda isi</span
+                >
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0 btn-square bg-danger me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h5 class="mb-0">Confirm Order</h5>
+                </div>
+                <span
+                  >Untuk penyewaan dengan driver maka akan di jadwalkan untuk
+                  survei ke penyewa, jika penyewaan dengan driver langsung
+                  pembayaran sewa lunas melalui transfer ke rekening
+                  perusahaan</span
+                >
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0 btn-square bg-danger me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h5 class="mb-0">Survey</h5>
+                </div>
+                <span
+                  >Untuk penyewaan tanpa driver, surveyor akan melakukan
+                  peninjauan data penyewa di tempat tinggal penyewa dan atau
+                  sesuai alamat yang tertera di kartu identitas</span
+                >
+              </div>
+              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0 btn-square bg-danger me-3">
+                    <i class="fa fa-check text-white"></i>
+                  </div>
+                  <h5 class="mb-0">Delivery</h5>
+                </div>
+                <span
+                  >Kendaraan sewa dapat diambil atau diantar sesuai permintaan
+                  dari customer sesuai jam penyewaan. Sama halnya dengan
+                  pengembalian kendaraan</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div
+              class="position-relative overflow-hidden pe-5 pt-5 h-100"
+              style="min-height: 400px"
+            >
+              <img
+                class="position-absolute w-100 h-90"
+                src="img/car2.avif"
+                alt=""
+                style="object-fit: cover"
+              />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!--Video Start-->
+
+  <div class="text-center">
+    <iframe height="500" width="1000" src="https://www.youtube.com/embed/7pwb8vlSkAo" frameborder="0"></iframe>
+  </div>
+  <!--Video End-->
+
+
+<!-- Testimonial Start -->
+        <div class="container-xxl py-6">
+          <div class="container">
+            <div
+              class="text-center mx-auto mb-5 wow fadeInUp"
+              data-wow-delay="0.1s"
+              style="max-width: 500px"
+            >
+              <h1 class="text-danger text-uppercase mb-2">Testimonial</h1>
+              <h5 class="display-7 mb-4">What Our Customers Say!</h5>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="owl-carousel testimonial-carousel">
+                  <div class="testimonial-item text-center">
+                    <div class="position-relative mb-5">
+                      <img
+                        class="img-fluid rounded-circle mx-auto"
+                        src="img/car2.avif"
+                        alt=""
+                      />
+                      <div
+                        class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                        style="width: 60px; height: 60px"
+                      >
+                        <i class="fa fa-quote-left fa-2x text-danger"></i>
+                      </div>
+                    </div>
+                    <p class="fs-4">
+                      Ramah, bersih dan hafal tempat wisata serta memberikan
+                      alternatif/saran mana yg akan dikunjungi. Terimakasih car
+                      rental king.
+                    </p>
+                    <hr class="w-25 mx-auto" />
+                    <h5>Faiza Nabila</h5>
+                    <span>Pekalongan</span>
+                  </div>
+                  <div class="testimonial-item text-center">
+                    <div class="position-relative mb-5">
+                      <img
+                        class="img-fluid rounded-circle mx-auto"
+                        src="img/car7.avif"
+                        alt=""
+                      />
+                      <div
+                        class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                        style="width: 60px; height: 60px"
+                      >
+                        <i class="fa fa-quote-left fa-2x text-danger"></i>
+                      </div>
+                    </div>
+                    <p class="fs-4">
+                      Sudah beberapa kali menggunakan jasa Car Rental King dan
+                      selalu puas dengan pelayanannya. Proses order lancar dan
+                      mudah, kondisi kendaraan sangat baik, driver juga ramah dan
+                      cara berkendara aman. Very recommended.
+                    </p>
+                    <hr class="w-25 mx-auto" />
+                    <h5>Rayhan Saputra</h5>
+                    <span>Solo</span>
+                  </div>
+                  <div class="testimonial-item text-center">
+                    <div class="position-relative mb-5">
+                      <img
+                        class="img-fluid rounded-circle mx-auto"
+                        src="img/car3.avif"
+                        alt=""
+                      />
+                      <div
+                        class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle"
+                        style="width: 60px; height: 60px"
+                      >
+                        <i class="fa fa-quote-left fa-2x text-danger"></i>
+                      </div>
+                    </div>
+                    <p class="fs-4">
+                      Mobil selalu bersih, pengemudi ramah, disiplin on time dan
+                      sangat membantu. Drivernya juga punya kemampuan menjadi tour
+                      guide pengaturan juga sangat fleksibel untuk perubahan paket
+                      sewa maupun rencana perjalanan.
+                    </p>
+                    <hr class="w-25 mx-auto" />
+                    <h5>Praticia Salsabila</h5>
+                    <span>Jogja</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+  <!-- Testimonial End -->
+
+  <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Get In Touch</h4>
+
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Semarang, Jawa Tengah
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+628 99 2526 802
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>carentalking@gmail.com
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="courses.html">Our Service</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
+            <a class="btn btn-link" href="registrasi.html">Form Rental Mobil</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Kategori</h4>
+            <a class="btn btn-link" href="listcar.html">Car List</a>
+            <a class="btn btn-link" href="driver.html">Price list plus driver</a>
+            <a class="btn btn-link" href="no driver.html">Price list lepas kunci</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-light mb-4">Newsletter</h4>
+            <form action="">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control p-3 border-0"
+                  placeholder="Your Email Address"
+                />
+                <button class="btn btn-danger">Sign Up</button>
+              </div>
+            </form>
+            <h6 class="text-white mt-4 mb-3">Social Media</h6>
+            <div class="d-flex pt-2">
+              <a class="btn btn-square btn-outline-light me-1" href="https://x.com/awld02?t=maWILVwtERhO-SDpsQch-Q&s=09"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-square btn-outline-light me-1" href="https://www.facebook.com/aisyah.wulandari.7965?mibextid=rS40aB7S9Ucbxw6v"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-square btn-outline-light me-1" href="https://www.youtube.com"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-square btn-outline-light me-1" href="https://www.instagram.com/invites/contact/?i=1h22i58x3s8w1&utm_content=f3zsadg"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="btn btn-square btn-outline-light me-0" href="https://wa.me/628992526802"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer End -->
+
+     <!-- Copyright Start -->
+     <div
+     class="container-fluid copyright text-light py-4 wow fadeIn"
+     data-wow-delay="0.1s"
+   >
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+           &copy; Copyright2023 by Aisyah Wulandari</a>, All Right Reserved.
+         </div>
+         
+       </div>
+     </div>
+   </div>
+   <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
